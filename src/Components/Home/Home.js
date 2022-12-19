@@ -22,7 +22,7 @@ const Home = () => {
         >
           <SwiperSlide>
             <div
-              className="hero lg:h-[85vh] h-[50vh]"
+              className="hero lg:h-[90vh] h-[55vh]"
               style={{
                 backgroundImage: `url(${banner1})`,
               }}
@@ -48,7 +48,7 @@ const Home = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="hero lg:h-[85vh] h-[50vh]"
+              className="hero lg:h-[90vh] h-[55vh]"
               style={{
                 backgroundImage: `url(${banner2})`,
               }}
@@ -74,7 +74,7 @@ const Home = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="hero lg:h-[85vh] h-[50vh]"
+              className="hero lg:h-[90vh] h-[55vh]"
               style={{
                 backgroundImage: `url(${banner3})`,
               }}

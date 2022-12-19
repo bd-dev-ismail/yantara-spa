@@ -9,12 +9,12 @@ const AboutUs = () => {
             <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
               <div className="max-w-xl mb-6">
                 <div>
-                  <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider  uppercase ">
+                  <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider golden-color uppercase ">
                     Yantra Spa
                   </p>
                 </div>
-                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight golden-color sm:text-4xl sm:leading-none">
-                  About Us
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
+                  About <span className="golden-color">Us</span>
                 </h2>
                 <p className="text-base text-gray-200 md:text-lg">
                   Pampering yourself once in a while is must. It refreshes your
