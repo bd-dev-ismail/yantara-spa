@@ -36,9 +36,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="/"
-            
-            
+            href="#offer"
             class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
           >
             Offers

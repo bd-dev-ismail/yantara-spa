@@ -1,51 +1,54 @@
 import React from 'react';
-import white from '../../assets/white&bright.webp';
-import anti from '../../assets/anti-aging-facial.jpg';
-import deep from '../../assets/deep-tissue-massage.jpg';
-const Facials = () => {
+import lemon from '../../assets/lemon.webp';
+import coffe from '../../assets/COFFEE-RUB.jpg';
+import salt from '../../assets/SALT-SCRUB.jpg';
+const BodyScrub = () => {
     const data = [
       {
         id: 1,
-        name: "White & Bright Facial",
+        name: "Lemon Grass",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
-        img: white,
-        price1: "Rs 2000 -60Mins",
+        img: lemon,
+        price1: "Rs 3000 -60Mins",
       },
       {
         id: 2,
-        name: "Anti-Aging FAcial",
+        name: "Coffe Bean Scrub",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
-        img: anti,
-        price1: "Rs 2500 -60Mins",
+        img: coffe,
+        price1: "Rs 2700 -60Mins",
       },
       {
         id: 3,
-        name: "Deep Cleansing Facial",
+        name: "Sea Salt Body Scrub",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
-        img: deep,
-        price1: "Rs 2800 -60Mins",
+        img: salt,
+        price1: "Rs 2500 -60Mins",
       },
     ];
     return (
       <div>
-        <h2 className="max-w-lg mb-6 text-start golden-color font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
-          Facials
+        <h2 className="max-w-lg mb-6 text-start  font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
+          Body <span className="golden-color">Scrub</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.map((service) => (
             <div
-              style={{ background: "#cea314" }}
-              className="card card-compact golden-color-bg text-white w-full lg:w-96 shadow-2xl"
+              style={{ background: "#fff" }}
+              className="card card-compact golden-color-bg text-black w-full lg:w-96 shadow-2xl"
             >
               <figure>
-                <img src={service.img} alt="Shoes" />
+                <img src={service.img} alt="Shoes" className='img-full'/>
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{service.name}</h2>
                 <p>{service.desc}</p>
                 <div className="card-actions justify-end my-3 ">
                   <div>
-                    <button className="btn bg-black capitalize btn-primary btn-sm">
+                    <button
+                      style={{ background: "#cea314" }}
+                      className="btn bg-black  font-bold capitalize border-0 btn-primary btn-sm"
+                    >
                       {service.price1}
                     </button>
                   </div>
@@ -58,4 +61,4 @@ const Facials = () => {
     );
 };
 
-export default Facials;
+export default BodyScrub;

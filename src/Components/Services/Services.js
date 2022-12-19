@@ -2,6 +2,8 @@ import React from 'react';
 import head from '../../assets/headmassage.jpg';
 import neack from '../../assets/neckbackshoulder.jpg';
 import foot from '../../assets/reflexology.jpeg';
+import BodyScrub from './BodyScrub';
+import BodyWraps from './BodyWraps';
 import Facials from './Facials';
 import SpaTreatment from './SpaTreatment';
 const service1Data = [
@@ -37,11 +39,11 @@ const Services = () => {
           Our All <span className="golden-color">Services</span>
         </h2>
         <div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {service1Data.map((service) => (
               <div
                 style={{ background: "#cea314" }}
-                className="card card-compact golden-color-bg text-white w-96 shadow-2xl"
+                className="card card-compact golden-color-bg text-white w-full lg:w-96 shadow-2xl"
               >
                 <figure>
                   <img src={service.img} alt="Shoes" />
@@ -65,11 +67,17 @@ const Services = () => {
               </div>
             ))}
           </div>
-          <div className='my-10'>
-            <SpaTreatment/>
+          <div className="my-10">
+            <SpaTreatment />
           </div>
-          <div className='my-10'>
-            <Facials/>
+          <div className="my-10">
+            <Facials />
+          </div>
+          <div className="my-10">
+            <BodyScrub />
+          </div>
+          <div className="my-10">
+            <BodyWraps />
           </div>
         </div>
       </div>

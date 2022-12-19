@@ -133,11 +133,11 @@ const SpaTreatment = () => {
             Spa <span className="golden-color">Treatments</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.map((service) => (
             <div
               style={{ background: "#fff" }}
-              className="card card-compact golden-color-bg text-black w-96 shadow-2xl"
+              className="card card-compact golden-color-bg text-black w-full lg:w-96 shadow-2xl"
             >
               <figure>
                 <img
@@ -173,7 +173,7 @@ const SpaTreatment = () => {
                     {service.price3 ? (
                       <button
                         style={{ background: "#cea314" }}
-                        className="btn bg-black font-bold capitalize border-0  btn-primary btn-sm"
+                        className="btn bg-black font-bold capitalize border-0 btn-primary btn-sm"
                       >
                         {service.price2}
                       </button>
