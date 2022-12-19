@@ -81,8 +81,8 @@ const Offer = () => {
                     <div className="space-y-2">
                       <h4 className="text-2xl font-bold">Gold</h4>
                       <span className="text-6xl font-bold">
-                        $24
-                        <span className="text-sm tracking-wide">/month</span>
+                        ₹15000
+                        <span className="text-sm tracking-wide">/6month</span>
                       </span>
                     </div>
                     <p className="leading-relaxed">
@@ -160,8 +160,8 @@ const Offer = () => {
                     <div className="space-y-2">
                       <h4 className="text-2xl font-bold">Diamond</h4>
                       <span className="text-6xl font-bold">
-                        $72
-                        <span className="text-sm tracking-wide">/month</span>
+                        ₹25000
+                        <span className="text-sm tracking-wide">/9month</span>
                       </span>
                     </div>
                     <p className="leading-relaxed dark:text-gray-400">

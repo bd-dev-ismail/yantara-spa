@@ -55,8 +55,8 @@ const Navbar = () => {
       </>
     );
     return (
-      <div>
-        <div class="bg-black">
+      <div className="relative">
+        <div class="bg-black fixed top-0 w-full z-10">
           <div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div class="relative flex items-center justify-between">
               <a
@@ -141,9 +141,7 @@ const Navbar = () => {
                         <ul class="space-y-4">
                           <li>
                             <a
-                              href="/"
-                              
-                              
+                              href="#home"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
                               Home
@@ -151,9 +149,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <a
-                              href="/"
-                              
-                              
+                              href="#about"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
                               About Us
@@ -161,7 +157,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <a
-                              href="/"
+                              href="#services"
                               aria-label="Product pricing"
                               title="Product pricing"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -171,7 +167,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <a
-                              href="/"
+                              href="#offer"
                               aria-label="About us"
                               title="About us"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
