@@ -1,3 +1,16 @@
 .banner-text-color{
     color: #494E54;
 }
+/* .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #ffc812;
+} */
+/* swiper-pagination-bullet swiper-pagination-bullet-active{
+    background-color: #ffc812 !important;
+} */
+.swiper-pagination-bullet-active{
+    background-color: #ffc812 !important;
+}
+.golden-color{
+   color:  #ffd222;
+}

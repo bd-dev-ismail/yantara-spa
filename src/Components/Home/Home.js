@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from "swiper";
 import banner1 from '../../assets/img1.png';
 import banner2 from '../../assets/img2.jpg';
 import banner3 from '../../assets/img3.png';
+import './Home.css';
 const Home = () => {
     // SwiperCore.use([Autoplay]);
     return (
@@ -27,17 +28,17 @@ const Home = () => {
               }}
             >
               <div className="hero-overlay bg-opacity-20"></div>
-              <div className="hero-content absolute left-[5%] lg:left-[17%] text-start banner-text-color">
+              <div className="hero-content absolute left-[5%] lg:left-[17%] text-start text-black">
                 <div className="max-w-md">
-                  <p className='text-3xl italic'>Spa & Massage</p>
+                  <p className="text-3xl italic">Spa & Massage</p>
                   <h1 className="mb-5 lg:text-9xl text-5xl font-bold">
-                    Skincare
+                    Relaxation
                   </h1>
 
                   <a
                     href="/"
-                    class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-black"
-                    style={{ background: "#ffc812" }}
+                    class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
+                    style={{ background: "#cea314" }}
                   >
                     Book Appointment
                   </a>
@@ -45,7 +46,7 @@ const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <div
               className="hero lg:h-[85vh] h-[50vh]"
               style={{
@@ -53,20 +54,25 @@ const Home = () => {
               }}
             >
               <div className="hero-overlay bg-opacity-20"></div>
-              <div className="hero-content text-center text-white">
+              <div className="hero-content text-center text-black">
                 <div className="max-w-md">
-                  <h1 className="mb-5 lg:text-8xl text-5xl font-bold">
-                    Fashion <br /> Changing <br /> Always
+                  <p className="text-3xl italic">Spa & Massage</p>
+                  <h1 className="mb-5 lg:text-9xl text-5xl font-bold">
+                    Relaxation
                   </h1>
 
-                  <a href="/shop">
-                    <button className="btn btn-primary">Shop Now</button>
+                  <a
+                    href="/"
+                    class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
+                    style={{ background: "#cea314" }}
+                  >
+                    Book Appointment
                   </a>
                 </div>
               </div>
             </div>
-          </SwiperSlide> */}
-          {/* <SwiperSlide>
+          </SwiperSlide>
+          <SwiperSlide>
             <div
               className="hero lg:h-[85vh] h-[50vh]"
               style={{
@@ -74,19 +80,24 @@ const Home = () => {
               }}
             >
               <div className="hero-overlay bg-opacity-20"></div>
-              <div className="hero-content text-center text-white">
+              <div className="hero-content absolute right-[5%] lg:right-[17%] text-center text-black">
                 <div className="max-w-md">
-                  <h1 className="mb-5 lg:text-8xl text-5xl font-bold">
-                    Fashion <br /> Changing <br /> Always
+                  <p className="text-3xl italic">Spa & Massage</p>
+                  <h1 className="mb-5 lg:text-9xl text-black text-5xl font-bold">
+                    Relaxation
                   </h1>
 
-                  <a href="/shop">
-                    <button className="btn btn-primary">Shop Now</button>
+                  <a
+                    href="/"
+                    class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
+                    style={{ background: "#cea314" }}
+                  >
+                    Book Appointment
                   </a>
                 </div>
               </div>
             </div>
-          </SwiperSlide> */}
+          </SwiperSlide>
         </Swiper>
       </div>
     );
