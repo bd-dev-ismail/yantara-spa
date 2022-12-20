@@ -28,7 +28,7 @@ const BodyWraps = () => {
      ];
     return (
       <div>
-        <h2 className="max-w-lg mb-6 text-start  font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
+        <h2 className="text-center text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none my-20">
           Body <span className="golden-color">Wraps</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

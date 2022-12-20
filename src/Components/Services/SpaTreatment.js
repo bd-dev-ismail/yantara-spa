@@ -129,7 +129,7 @@ const SpaTreatment = () => {
     return (
       <div>
         <div>
-          <h2 className="max-w-lg mb-6 text-start font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
+          <h2 className="text-center text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none my-20">
             Spa <span className="golden-color">Treatments</span>
           </h2>
         </div>

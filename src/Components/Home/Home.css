@@ -8,8 +8,14 @@
 /* swiper-pagination-bullet swiper-pagination-bullet-active{
     background-color: #ffc812 !important;
 } */
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active 
+{
     background-color: #ffc812 !important;
+    
+}
+.swiper-pagination-bullet{
+    width: 20px !important;
+        height: 20px !important;
 }
 .golden-color{
    color:  #ffd222;

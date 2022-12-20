@@ -5,13 +5,14 @@ import foot from '../../assets/reflexology.jpeg';
 import BodyScrub from './BodyScrub';
 import BodyWraps from './BodyWraps';
 import Facials from './Facials';
+import ServiceItem from './ServiceItem';
 import SpaTreatment from './SpaTreatment';
 const service1Data = [
   {
     id: 1,
     name: "Head Massage",
     desc: "A head massage help relieve stress and reduce tesnsion. It may also ease migraine or headache pain, lower blood pressure,improve circulation to your head and neck, and promote hair growtyh. Before using essential olis, make sure they're diluted, and do a patch test before using on a large area of skin.",
-    img: neack,
+    img: head,
     price1: "Rs 1500 -30Mins",
     price2: "Rs 2200 -45Mins",
   },
@@ -19,7 +20,7 @@ const service1Data = [
     id: 2,
     name: "Neck, Back & Shoulder",
     desc: "Neck, Back & Shoulder Massage will have a soothing effect on the sensory nerve endings in the skin, it will promote relaxation, It relieves muscular tension and pain in the neck and shoulders. It improves the elastioty of the skin and the muscles.",
-    img: head,
+    img: neack,
     price1: "Rs 1500 -30Mins",
     price2: "Rs 2200 -45Mins",
   },
@@ -34,12 +35,12 @@ const service1Data = [
 ];
 const Services = () => {
     return (
-      <div className="container mx-auto">
-        <h2 className="text-center text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none my-20">
+      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+        <h2 className="text-center text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none my-10">
           Our All <span className="golden-color">Services</span>
         </h2>
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {service1Data.map((service) => (
               <div
                 style={{ background: "#cea314" }}
@@ -66,7 +67,8 @@ const Services = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+          <ServiceItem/>
           <div className="my-10">
             <SpaTreatment />
           </div>

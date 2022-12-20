@@ -28,7 +28,7 @@ const BodyScrub = () => {
     ];
     return (
       <div>
-        <h2 className="max-w-lg mb-6 text-start  font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
+        <h2 className="text-center  text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none my-20">
           Body <span className="golden-color">Scrub</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -38,7 +38,7 @@ const BodyScrub = () => {
               className="card card-compact golden-color-bg text-black w-full lg:w-96 shadow-2xl"
             >
               <figure>
-                <img src={service.img} alt="Shoes" className='img-full'/>
+                <img src={service.img} alt="Shoes" className="img-full" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{service.name}</h2>

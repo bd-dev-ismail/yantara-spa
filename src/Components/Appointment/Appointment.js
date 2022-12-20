@@ -64,11 +64,12 @@ const Appointment = () => {
               Book an <span className="golden-color">Appointment</span>
             </h2>
           </div>
-          <div className="grid mt-10 items-center max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto rounded-lg md:grid-cols-2  dark:bg-gray-800 dark:text-gray-100">
+          <div className="grid mt-10 py-10 items-center max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto rounded-lg md:grid-cols-2 bg-black border-2 border-yellow-300 dark:bg-gray-800 dark:text-gray-100">
             <div className="flex flex-col justify-between lg:mr-20">
               <div className="space-y-2">
-                <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
-                  We love to hear <br className="hidden lg:block" /> from you
+                <h2 className="text-4xl py-5 font-bold leading-tight lg:text-5xl">
+                  We love to hear <br className="hidden lg:block" />{" "}
+                  <span className='golden-color'>from you</span>
                 </h2>
                 <div className="dark:text-gray-400">
                   A wonderful serenity has taken possession of my entire soul,

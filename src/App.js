@@ -31,13 +31,17 @@ function App() {
       <div id="offer" className="my-10">
         <Discount />
       </div>
-      <div id="reviews" className="my-10 container mx-auto">
+      <div
+        id="reviews"
+        className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+      >
         <Reviews />
       </div>
+      
       <div className="my-10">
-        <Map/>
+        <Map />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

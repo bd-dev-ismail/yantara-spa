@@ -35,13 +35,13 @@ const Home = () => {
                     Relaxation
                   </h1>
 
-                  <a
+                  {/* <a
                     href="#form"
                     class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
                     style={{ background: "#cea314" }}
                   >
                     Book Appointment
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -61,18 +61,18 @@ const Home = () => {
                     Relaxation
                   </h1>
 
-                  <a
+                  {/* <a
                     href="#form"
                     class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
                     style={{ background: "#cea314" }}
                   >
                     Book Appointment
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div
               className="hero lg:h-[90vh] h-[55vh]"
               style={{
@@ -97,7 +97,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     );

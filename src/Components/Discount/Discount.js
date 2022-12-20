@@ -4,8 +4,8 @@ const Discount = () => {
     return (
       <div>
         <div className="text-center">
-          <h2 className=" text-center font-sans text-3xl golden-color font-bold tracking-tight  sm:text-5xl sm:leading-none">
-            Offers
+          <h2 className=" text-center font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
+            Our <span className="golden-color ">Offers</span>
           </h2>
         </div>
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

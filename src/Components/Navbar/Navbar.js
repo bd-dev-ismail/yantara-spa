@@ -44,6 +44,14 @@ const Navbar = () => {
             Reviews
           </a>
         </li>
+        <li>
+          <a
+            href="#form"
+            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+          >
+            contact us
+          </a>
+        </li>
       </>
     );
     return (
@@ -61,10 +69,9 @@ const Navbar = () => {
                   Yantra Spa
                 </span>
               </a>
+              {/* <ul class="flex items-cetner hidden space-x-8 lg:flex"></ul> */}
               <ul class="flex items-center hidden space-x-8 lg:flex">
                 {menuItem}
-              </ul>
-              <ul class="flex items-center hidden space-x-8 lg:flex">
                 <li>
                   <a
                     href="#form"

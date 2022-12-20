@@ -5,7 +5,7 @@ const Map = () => {
       <div className="container mx-auto">
         <div className="text-center my-10">
           <h2 className=" text-center font-sans text-3xl  font-bold tracking-tight  sm:text-5xl sm:leading-none">
-            Find <span className="golden-color">Us</span>
+            Reach <span className="golden-color">Us</span>
           </h2>
         </div>
         <iframe

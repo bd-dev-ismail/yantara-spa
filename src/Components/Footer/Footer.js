@@ -131,11 +131,11 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+          <div className="flex flex-col-reverse justify-center pt-5 pb-10 border-t lg:flex-row">
             <p className="text-sm text-white hover:text-yellow-400">
               © Copyright 2020 Yantra Spa. All rights reserved.
             </p>
-            <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+            {/* <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
               <li>
                 <a
                   href="#home"
@@ -176,7 +176,7 @@ const Footer = () => {
                   Reviews
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
