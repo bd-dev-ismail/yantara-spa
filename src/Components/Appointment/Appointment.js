@@ -2,12 +2,66 @@ import React from 'react';
 import { FaBlenderPhone, FaEnvelopeOpenText, FaLocationArrow } from 'react-icons/fa';
 
 const Appointment = () => {
+    const services = [
+        {
+            id: 1,
+            name: "Head Massage"
+        },
+        {
+            id: 2,
+            name: "Neck, Back & Shoulder"
+        },
+        {
+            id: 3,
+            name: "Foot Reflexology"
+        },
+        {
+            id: 4,
+            name: "Spa Treatment"
+        },
+        {
+            id: 5,
+            name: "Deep Tissue Massage"
+        },
+        {
+            id: 6,
+            name: "Yantra Massage"
+        },
+        {
+            id: 7,
+            name: "Pedicure"
+        },
+        {
+            id: 8,
+            name: "Menicure"
+        },
+        {
+            id: 9,
+            name: "Steam Bath"
+        },
+        {
+            id: 10,
+            name: "Facial"
+        },
+        {
+            id: 11,
+            name: "Body Scrub"
+        },
+        {
+            id: 12,
+            name: "Body Wraps"
+        },
+        {
+            id: 13,
+            name: "Membership Packages"
+        },
+    ]
     return (
       <div>
         <div>
-          <div className='text-center'>
+          <div className="text-center">
             <h2 className=" text-center font-sans text-3xl font-bold tracking-tight  sm:text-5xl sm:leading-none">
-              Book a <span className="golden-color">Appointment</span>
+              Book an <span className="golden-color">Appointment</span>
             </h2>
           </div>
           <div className="grid mt-10 items-center max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto rounded-lg md:grid-cols-2  dark:bg-gray-800 dark:text-gray-100">
@@ -75,6 +129,16 @@ const Appointment = () => {
                 />
               </div>
               <div>
+                <label className="label">
+                  <span className="label-text">Chosse A Service</span>
+                </label>
+                <select className="select select-bordered w-full  input  p-3 rounded dark:bg-gray-800">
+                  {services.map((service) => (
+                    <option key={service.id}>{service?.name}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
                 <label htmlFor="message" className="text-sm">
                   Message
                 </label>
@@ -87,7 +151,7 @@ const Appointment = () => {
               </div>
               <button
                 type="submit"
-                className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-yellow-500 dark:text-gray-900"
+                className="w-full p-3 text-sm font-bold tracking-wide text-white uppercase rounded bg-yellow-500 dark:text-gray-900"
               >
                 Send Message
               </button>
