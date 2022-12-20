@@ -1,4 +1,5 @@
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Appointment from "./Components/Appointment/Appointment";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Offer from "./Components/Offer/Offer";
@@ -19,6 +20,9 @@ function App() {
       </div>
       <div id="offer" className="my-5">
         <Offer/>
+      </div>
+      <div className="mb-10">
+        <Appointment/>
       </div>
     </div>
   );
