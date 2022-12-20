@@ -1,7 +1,9 @@
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Appointment from "./Components/Appointment/Appointment";
 import Discount from "./Components/Discount/Discount";
+import  Footer  from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
+import Map from "./Components/Map/Map";
 import Navbar from "./Components/Navbar/Navbar";
 import Offer from "./Components/Offer/Offer";
 import Reviews from "./Components/Reviews/Reviews";
@@ -32,6 +34,10 @@ function App() {
       <div id="reviews" className="my-10 container mx-auto">
         <Reviews />
       </div>
+      <div className="my-10">
+        <Map/>
+      </div>
+      <Footer/>
     </div>
   );
 }

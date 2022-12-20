@@ -36,7 +36,7 @@ const Home = () => {
                   </h1>
 
                   <a
-                    href="/"
+                    href="#form"
                     class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
                     style={{ background: "#cea314" }}
                   >
@@ -62,7 +62,7 @@ const Home = () => {
                   </h1>
 
                   <a
-                    href="/"
+                    href="#form"
                     class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
                     style={{ background: "#cea314" }}
                   >
@@ -88,7 +88,7 @@ const Home = () => {
                   </h1>
 
                   <a
-                    href="/"
+                    href="#form"
                     class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
                     style={{ background: "#cea314" }}
                   >
