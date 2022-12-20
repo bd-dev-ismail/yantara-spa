@@ -7,8 +7,6 @@ const Navbar = () => {
         <li>
           <a
             href="#home"
-            
-            
             class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
           >
             Home
@@ -17,8 +15,6 @@ const Navbar = () => {
         <li>
           <a
             href="#about"
-            
-            
             class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
           >
             About Us
@@ -27,8 +23,6 @@ const Navbar = () => {
         <li>
           <a
             href="#services"
-            
-            
             class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
           >
             Services
@@ -44,9 +38,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="/"
-            
-            
+            href="#reviews"
             class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
           >
             Reviews
@@ -75,7 +67,7 @@ const Navbar = () => {
               <ul class="flex items-center hidden space-x-8 lg:flex">
                 <li>
                   <a
-                    href="/"
+                    href="#form"
                     class="inline-flex items-center text-white rounded-lg font-semibold justify-center h-12 px-6 "
                     style={{ background: "#cea314" }}
                   >
@@ -177,7 +169,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <a
-                              href="/"
+                              href="#reviews"
                               aria-label="About us"
                               title="About us"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -187,7 +179,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <a
-                              href="/"
+                              href="#form"
                               class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-black"
                               style={{ background: "#ffc812" }}
                             >

@@ -4,6 +4,7 @@ import Discount from "./Components/Discount/Discount";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Offer from "./Components/Offer/Offer";
+import Reviews from "./Components/Reviews/Reviews";
 import Services from "./Components/Services/Services";
 
 function App() {
@@ -22,11 +23,14 @@ function App() {
       <div className="my-5">
         <Offer />
       </div>
-      <div className="mb-10">
+      <div id="form" className="mb-10">
         <Appointment />
       </div>
       <div id="offer" className="my-10">
         <Discount />
+      </div>
+      <div id="reviews" className="my-10 container mx-auto">
+        <Reviews />
       </div>
     </div>
   );
