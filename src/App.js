@@ -2,31 +2,31 @@ import ReactWhatsapp from "react-whatsapp";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Appointment from "./Components/Appointment/Appointment";
 import Discount from "./Components/Discount/Discount";
-import  Footer  from "./Components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Map from "./Components/Map/Map";
 import Navbar from "./Components/Navbar/Navbar";
 import Offer from "./Components/Offer/Offer";
 import Reviews from "./Components/Reviews/Reviews";
 import Services from "./Components/Services/Services";
-import logo from './assets/logo.png';
-import { IconName, RiWhatsappFill } from "react-icons/ri";
+import { RiWhatsappFill } from "react-icons/ri";
 import Header from "./Components/Header/Header";
+
 function App() {
   return (
-    <div>
-      {/* <div className=" fixed top-[70%] right-5 z-50">
+    <div className="relative">
+      <div className=" fixed top-[90%] right-5 z-50">
         <ReactWhatsapp
-          number="1-212-736-5000"
+          number="+880 1833201582"
           message="I am Interested in Yantra-Spa Services!!!"
         >
-          <RiWhatsappFill className="text-[#25D366] text-6xl " />
+          <RiWhatsappFill title="Direct Message" className="text-[#25D366] text-6xl" />
         </ReactWhatsapp>
-      </div> */}
+      </div>
       <Navbar />
       <div id="home">
         {/* <Home /> */}
-        <Header/>
+        <Header />
       </div>
       <div id="about">
         <AboutUs />
