@@ -93,6 +93,9 @@ const data = [
     price2: "Rs 1499 -45Mins",
     
   },
+  
+];
+const services = [
   {
     id: 10,
     name: "Manicure",
@@ -100,29 +103,27 @@ const data = [
     img: manicure,
     price1: "Rs 999 -30Mins",
     price2: "Rs 1499 -45Mins",
-    
   },
   {
     id: 11,
     name: "Stem Bath",
     items: [
       {
-        name: "Cleaning Congestions"
+        name: "Cleaning Congestions",
       },
       {
-        name: "Improving Skin Health"
+        name: "Improving Skin Health",
       },
       {
-        name: "Lowering Blood presure"
+        name: "Lowering Blood presure",
       },
       {
-        name: "Workout recovery"
-      }
+        name: "Workout recovery",
+      },
     ],
     img: bath,
     price1: "Rs 399 -15Mins",
     price2: "Rs 599 -30Mins",
-    
   },
 ];
 const SpaTreatment = () => {
@@ -133,7 +134,7 @@ const SpaTreatment = () => {
             Spa <span className="golden-color">Treatments</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
           {data.map((service) => (
             <div
               style={{ background: "#fff" }}
@@ -153,31 +154,58 @@ const SpaTreatment = () => {
                   <li>{item.name}</li>
                 ))}
                 <div className="card-actions justify-center my-3 ">
-                  <div>
-                    <button
-                      style={{ background: "#cea314" }}
-                      className="btn bg-black  font-bold capitalize border-0 btn-primary btn-sm"
-                    >
-                      {service.price1}
-                    </button>
+                  <div className="flex justify-around gap-8 items-center">
+                    <div>
+                      <p className="text-xl font-semibold">Minutes</p>
+                      <p>30 Mins</p>
+                      <p>45 Mins</p>
+                      <p>60 Mins</p>
+                    </div>
+                    <div>
+                      <p className="text-xl font-semibold">Price</p>
+                      <p>Rs. 1500 /- </p>
+                      <p>Rs. 2200 /- </p>
+                      <p>Rs. 2800 /- </p>
+                    </div>
                   </div>
-                  <div>
-                    <button
-                      style={{ background: "#cea314" }}
-                      className="btn bg-black font-bold capitalize border-0  btn-primary btn-sm"
-                    >
-                      {service.price2}
-                    </button>
-                  </div>
-                  <div>
-                    {service.price3 ? (
-                      <button
-                        style={{ background: "#cea314" }}
-                        className="btn bg-black font-bold capitalize border-0 btn-primary btn-sm"
-                      >
-                        {service.price2}
-                      </button>
-                    ) : undefined}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="lg:flex justify-center items-center mt-9  lg:gap-8">
+          {services.map((service) => (
+            <div
+              style={{ background: "#fff" }}
+              className="card card-compact golden-color-bg text-black mb-5  w-full h-[560px] lg:w-96 shadow-2xl"
+            >
+              <figure>
+                <img
+                  src={service.img}
+                  alt="Shoes"
+                  className="h-64 w-full object-fill"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{service.name}</h2>
+                <p>{service.desc}</p>
+                {service?.items?.map((item) => (
+                  <li>{item.name}</li>
+                ))}
+                <div className="card-actions justify-center my-3 ">
+                  <div className="flex justify-around gap-8 items-center">
+                    <div>
+                      <p className="text-xl font-semibold">Minutes</p>
+                      <p>30 Mins</p>
+                      <p>45 Mins</p>
+                      <p>60 Mins</p>
+                    </div>
+                    <div>
+                      <p className="text-xl font-semibold">Price</p>
+                      <p>Rs. 1500 /- </p>
+                      <p>Rs. 2200 /- </p>
+                      <p>Rs. 2800 /- </p>
+                    </div>
                   </div>
                 </div>
               </div>

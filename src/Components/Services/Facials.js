@@ -43,11 +43,20 @@ const Facials = () => {
               <div className="card-body">
                 <h2 className="card-title">{service.name}</h2>
                 <p>{service.desc}</p>
-                <div className="card-actions justify-end my-3 ">
-                  <div>
-                    <button className="btn bg-black capitalize btn-primary btn-sm">
-                      {service.price1}
-                    </button>
+                <div className="card-actions justify-center my-3 ">
+                  <div className="flex justify-around gap-8  items-center">
+                    <div>
+                      <p className="text-xl font-semibold">Minutes</p>
+                      <p>30 Mins</p>
+                      
+                      <p>60 Mins</p>
+                    </div>
+                    <div>
+                      <p className="text-xl font-semibold">Price</p>
+                      <p>Rs. 1500 /- </p>
+                      <p>Rs. 2200 /- </p>
+                    
+                    </div>
                   </div>
                 </div>
               </div>

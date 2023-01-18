@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBlenderPhone, FaEnvelopeOpenText, FaLocationArrow } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 
 const Appointment = () => {
     const services = [
@@ -55,8 +56,23 @@ const Appointment = () => {
             id: 13,
             name: "Membership Packages"
         },
-    ]
+    ];
+    const submit = (e) => {
+      e.preventDefault();
+      // const form = e.target.value.name;
+      // const firstName = form.first_name;
+      // const lastName = form.last_name;
+      // const number = form.number;
+      // const email = form.email;
+      // const service = form.service;
+      // const message = form.message;
+      // console.log(firstName, lastName, number, email, service, message);
+      // e.target.value.name.reset();
+      Swal.fire("Message Send!", "Thank you for contacting us!", "success");
+      
+    };
     return (
+      
       <div>
         <div>
           <div className="text-center">
@@ -69,7 +85,7 @@ const Appointment = () => {
               <div className="space-y-2">
                 <h2 className="text-4xl py-5 font-bold leading-tight lg:text-5xl">
                   We love to hear <br className="hidden lg:block" />{" "}
-                  <span className='golden-color'>from you</span>
+                  <span className="golden-color">from you</span>
                 </h2>
                 <div className="dark:text-gray-400">
                   A wonderful serenity has taken possession of my entire soul,
@@ -103,43 +119,75 @@ const Appointment = () => {
             </div>
             <form
               // ref={form}
-              //   onSubmit={sendEmail}
+                onSubmit={submit}
               className="space-y-6 ng-untouched ng-pristine ng-valid"
             >
-              <div>
-                <label htmlFor="name" className="text-sm">
-                  Full name
-                </label>
-                <input
-                  name="user_name"
-                  id="name"
-                  type="text"
-                  placeholder=""
-                  className="w-full input input-bordered p-3 rounded dark:bg-gray-800"
-                />
+              <div className="flex">
+                <div className="w-1/2 mr-2">
+                  <label htmlFor="name" className="text-sm">
+                    First Name
+                  </label>
+                  <input
+                    name="first_name"
+                    id="name"
+                    type="text"
+                    placeholder="Jhon"
+                    className="w-full input input-bordered p-3 rounded dark:bg-gray-800"
+                  />
+                </div>
+                <div className="w-1/2">
+                  <label htmlFor="name" className="text-sm">
+                    Last Name
+                  </label>
+                  <input
+                    name="last_name"
+                    id="name"
+                    type="text"
+                    placeholder="Doe"
+                    className="w-full input input-bordered p-3 rounded dark:bg-gray-800"
+                  />
+                </div>
               </div>
-              <div>
-                <label htmlFor="email" className="text-sm">
-                  Email
-                </label>
-                <input
-                  name="user_email"
-                  id="email"
-                  type="email"
-                  className="w-full input input-bordered p-3 rounded dark:bg-gray-800"
-                />
+              <div className="flex">
+                <div className="w-1/2 mr-2">
+                  <label htmlFor="name" className="text-sm">
+                    Contact Number
+                  </label>
+                  <input
+                    name="number"
+                    id="name"
+                    type="number"
+                    placeholder="+91 00000000"
+                    className="w-full input input-bordered p-3 rounded dark:bg-gray-800"
+                  />
+                </div>
+                <div className="w-1/2">
+                  <label htmlFor="email" className="text-sm">
+                    Email
+                  </label>
+                  <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="example@gmail.com"
+                    className="w-full input input-bordered p-3 rounded dark:bg-gray-800"
+                  />
+                </div>
               </div>
+
               <div>
                 <label className="label">
                   <span className="label-text">Chosse A Service</span>
                 </label>
-                <select className="select select-bordered w-full  input  p-3 rounded dark:bg-gray-800">
+                <select name='service' className="select select-bordered w-full  input  p-3 rounded dark:bg-gray-800">
+                  <option selected disabled>Services</option>
                   {services.map((service) => (
-                    <option key={service.id}>{service?.name}</option>
+                    <option value={service?.name} key={service.id}>{service?.name}</option>
                   ))}
                 </select>
               </div>
               <div>
+                
                 <label htmlFor="message" className="text-sm">
                   Message
                 </label>
@@ -151,6 +199,7 @@ const Appointment = () => {
                 ></textarea>
               </div>
               <button
+              
                 type="submit"
                 className="w-full p-3 text-sm font-bold tracking-wide text-white uppercase rounded bg-yellow-500 dark:text-gray-900"
               >

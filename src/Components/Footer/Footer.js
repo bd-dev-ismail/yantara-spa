@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  FaEnvelopeOpenText,
+  FaLocationArrow,
+  FaBlenderPhone,
+} from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -56,42 +61,26 @@ const Footer = () => {
               <p className="text-base hover:text-yellow-400 font-bold tracking-wide text-gray-100">
                 Contacts
               </p>
-              <div className="flex">
-                <p className="mr-1 text-white hover:text-yellow-400">Phone:</p>
-                <a
-                  href="tel:850-123-5021"
-                  aria-label="Our phone"
-                  title="Our phone"
-                  className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-yellow-400"
-                >
-                  +91 93467 45268
-                </a>
-              </div>
-              <div className="flex">
-                <p className="mr-1 text-white hover:text-yellow-400">Email:</p>
-                <a
-                  href="mailto:info@lorem.mail"
-                  aria-label="Our email"
-                  title="Our email"
-                  className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-yellow-400"
-                >
-                  support@example.com
-                </a>
-              </div>
-              <div className="flex">
-                <p className="mr-1 text-white hover:text-yellow-400">
-                  Address:
-                </p>
-                <a
-                  href="https://www.google.com/maps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Our address"
-                  title="Our address"
-                  className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-yellow-400"
-                >
-                  Himayatnagar, Hyderabad, Telangana 500029
-                </a>
+              <div>
+                <div className="flex items-center my-3">
+                  <FaLocationArrow className="text-xl golden-color mr-5" />
+                  <p>
+                    Himayatnagar, Hyderabad, <br />
+                    Telangana 500029, India
+                  </p>
+                </div>
+                <div className="flex items-center my-3">
+                  <FaEnvelopeOpenText className="text-xl golden-color mr-5" />
+                  <p>
+                    support@example.com <br /> info@example.com
+                  </p>
+                </div>
+                <div className="flex items-center my-3">
+                  <FaBlenderPhone className="text-xl golden-color mr-5" />
+                  <p>
+                    +91 93467 45268 <br /> +91 83097 66093
+                  </p>
+                </div>
               </div>
             </div>
             <div>

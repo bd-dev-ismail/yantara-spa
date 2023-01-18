@@ -90,14 +90,14 @@ const ServiceItem = () => {
                   <div>
                     <p className="text-xl font-semibold">Minutes</p>
                     <p>30 Mins</p>
-                    <p>45 Mins</p>
-                    <p>45 Mins</p>
+                    <p>60 Mins</p>
+                    <p>90 Mins</p>
                   </div>
                   <div>
                     <p className="text-xl font-semibold">Price</p>
-                    <p>₹1500 Rs</p>
-                    <p>₹2200 Rs</p>
-                    <p>₹2200 Rs</p>
+                    <p>₹1500</p>
+                    <p>₹2200</p>
+                    <p>₹2800</p>
                   </div>
                 </div>
                 <div className="text-center">
@@ -209,14 +209,14 @@ const ServiceItem = () => {
                   <div>
                     <p className="text-xl font-semibold">Minutes</p>
                     <p>30 Mins</p>
-                    <p>45 Mins</p>
-                    <p>45 Mins</p>
+                    <p>60 Mins</p>
+                    <p>90 Mins</p>
                   </div>
                   <div>
                     <p className="text-xl font-semibold">Price</p>
-                    <p>₹1500 Rs</p>
-                    <p>₹2200 Rs</p>
-                    <p>₹2200 Rs</p>
+                    <p>₹1500</p>
+                    <p>₹2200</p>
+                    <p>₹2800</p>
                   </div>
                 </div>
                 <div className="text-center">
