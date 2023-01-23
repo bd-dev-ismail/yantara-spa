@@ -4,6 +4,7 @@ import neack from '../../assets/neckbackshoulder.jpg';
 import foot from '../../assets/reflexology.jpeg';
 import BodyScrub from './BodyScrub';
 import BodyWraps from './BodyWraps';
+import DualCard from './DualCard';
 import Facials from './Facials';
 import ServiceItem from './ServiceItem';
 import SpaTreatment from './SpaTreatment';
@@ -70,17 +71,22 @@ const Services = () => {
               </div>
             ))}
           </div> */}
-          <ServiceItem />
-          <div className="my-10">
+          <div>
+            <ServiceItem />
+          </div>
+          {/* <div>
+            <DualCard/>
+          </div> */}
+          <div>
             <SpaTreatment />
           </div>
-          <div className="my-10">
+          <div className="px-4 my-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
             <Facials />
           </div>
-          <div className="my-10">
+          <div className="px-4 my-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
             <BodyScrub />
           </div>
-          <div className="my-10">
+          <div className="px-4 my-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
             <BodyWraps />
           </div>
         </div>

@@ -10,6 +10,7 @@ import lomi from "../../assets/lomi-lomi-Four-hand_web.jpg";
 import pedicure from "../../assets/pedicures.jpg";
 import manicure from "../../assets/manicure-massage.jpg";
 import bath from "../../assets/steam-bath.jfif";
+import DualCard from "./DualCard";
 
 const data = [
   {
@@ -92,6 +93,14 @@ const data = [
     price1: "999 ",
     price2: "1499",
   },
+  {
+    id: 10,
+    name: "Manicure",
+    desc: "a cosmetic treatment of the4 hands involving shaping and often painting of the nails, removal of the cuticles, and softening of the skin.",
+    img: manicure,
+    price1: "999 ",
+    price2: "1499",
+  },
 ];
 // const services = [
 //   {
@@ -145,7 +154,7 @@ const SpaTreatment = () => {
           Spa <span className="golden-color">Treatments</span>
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
         {data.map((service) => (
           <div
             style={{ background: "#fff" }}
@@ -184,7 +193,7 @@ const SpaTreatment = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
       {/* <div className="lg:flex justify-center items-center mt-9  lg:gap-8">
         {services.map((service) => (
           <div
@@ -253,7 +262,51 @@ const SpaTreatment = () => {
           </div>
         </div>
       </div> */}
-     
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        {data.map((item, idx) => (
+          <div className="lg:flex lg:px-16 my-16  mx-auto justify-center items-center">
+            <div
+              style={{ display: "block" }}
+              className="card card-side p-4 h-full lg:flex text-black bg-white rounded shadow-2xl"
+            >
+              <figure>
+                <img
+                  src={item.img}
+                  alt="Movie"
+                  className="w-96 md:w-full lg:h-[28rem] lg:w-full rounded object-cover"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{item.name}</h2>
+                <p>{item.desc}</p>
+                <div className="flex justify-start gap-16 my-5 items-center">
+                  <div>
+                    <p className="text-xl font-semibold">Minutes</p>
+                    <p>60 Mins</p>
+                    <p>90 Mins</p>
+                    {item.price3 ? <p>120 Mins</p> : undefined}
+                  </div>
+                  <div>
+                    <p className="text-xl font-semibold">Price</p>
+                    <p>₹{item.price1}</p>
+                    <p>₹{item.price1}</p>
+                    {item.price3 ? <p>₹{item.price3}</p> : undefined}
+                  </div>
+                </div>
+                <div className="card-actions justify-end">
+                  <a
+                    href="#form"
+                    class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
+                    style={{ background: "#cea314" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
