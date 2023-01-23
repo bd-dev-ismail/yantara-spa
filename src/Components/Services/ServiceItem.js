@@ -86,7 +86,7 @@ const ServiceItem = () => {
                     </span>
                   </li>
                 </ul>
-                <div className="flex justify-around my-5 items-center">
+                <div className="flex justify-start gap-16 my-5 items-center">
                   <div>
                     <p className="text-xl font-semibold">Minutes</p>
                     <p>30 Mins</p>
@@ -100,7 +100,7 @@ const ServiceItem = () => {
                     <p>₹2800</p>
                   </div>
                 </div>
-                <div className="text-center">
+                <div className="text-start">
                   <a
                     href="#form"
                     class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"
@@ -205,7 +205,7 @@ const ServiceItem = () => {
                     </span>
                   </li>
                 </ul>
-                <div className="flex justify-around my-5 items-center">
+                <div className="flex justify-start gap-16 my-5 items-center">
                   <div>
                     <p className="text-xl font-semibold">Minutes</p>
                     <p>30 Mins</p>
@@ -219,7 +219,7 @@ const ServiceItem = () => {
                     <p>₹2800</p>
                   </div>
                 </div>
-                <div className="text-center">
+                <div className="text-start">
                   <a
                     href="#form"
                     class="inline-flex items-center rounded-lg font-semibold justify-center h-12 px-6 text-white"

@@ -7,23 +7,23 @@ const BodyScrub = () => {
       {
         id: 1,
         name: "Lemon Grass",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
+        desc: "Helps to revitalize the body and clear the mind. Thai Lemongrass is a bold, clean, and zesty aroma that awakens the senses. It helps with mental concentration, focus, and motivation. The fresh lemony lime and subtle grass notes are the perfect balance to uplift the spirit.",
         img: lemon,
-        price1: "Rs 3000 -60Mins",
+        price1: "3000",
       },
       {
         id: 2,
         name: "Coffe Bean Scrub",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
+        desc: "Coffee bean scrub has several benefits that include: exfoliating and anti-inflammatory properties, temporary reduction of cellulite improved circulation, reduced eye puffiness, and smooth skin.",
         img: coffe,
-        price1: "Rs 2700 -60Mins",
+        price1: "2700",
       },
       {
         id: 3,
         name: "Sea Salt Body Scrub",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
+        desc: "Salt scrubs as they are more vigorous type of scrub. The salt scrub can be made with differing grades of sea salt depending on the level of exfoliant your skin will tolerate. Sea salt body scrubs are great for healing & bringing toxins to the surface.",
         img: salt,
-        price1: "Rs 2500 -60Mins",
+        price1: "2500",
       },
     ];
     return (
@@ -47,14 +47,14 @@ const BodyScrub = () => {
                   <div className="flex justify-around gap-8  items-center">
                     <div>
                       <p className="text-xl font-semibold">Minutes</p>
-                      <p>30 Mins</p>
+                      
 
                       <p>60 Mins</p>
                     </div>
                     <div>
                       <p className="text-xl font-semibold">Price</p>
-                      <p>Rs. 1500 /- </p>
-                      <p>Rs. 2200 /- </p>
+                      <p>Rs. {service?.price1} /- </p>
+                      
                     </div>
                   </div>
                 </div>

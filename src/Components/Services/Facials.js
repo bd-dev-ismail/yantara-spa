@@ -7,23 +7,23 @@ const Facials = () => {
       {
         id: 1,
         name: "White & Bright Facial",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
+        desc: "This Facial is mainly for pigmentation, dark circles, sun tan, dark sports and sagging. There are no chemical in the products. This Facial Contains natural fruit so that the superficial dead cells are completely removed. It contains anti-oxidant blend which gives glow to the skin. The serum helps to control the activity of the melanin. This facial lightens skin tone or provide an even skin complexion by lessening the concentration of melanin activity. This facial is recommende for all skin types.",
         img: white,
-        price1: "Rs 2000 -60Mins",
+        price1: "2000",
       },
       {
         id: 2,
         name: "Anti-Aging FAcial",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
+        desc: "This Treatment targets the aging process of the skin restoring mature skin in a gentle manner. This treatment works on the lost collagen of the skin and ensures proper care for skins renewal. This theraphy lifts and firms skin repairing damage leaving skin looking younger and vibrant.",
         img: anti,
-        price1: "Rs 2500 -60Mins",
+        price1: "2500",
       },
       {
         id: 3,
         name: "Deep Cleansing Facial",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nam fugit obcaecati est porro ipsa hic voluptatem impedit expedita similique facilis, illum esse harum! Omnis suscipit doloribus quibusdam doloremque qui!",
+        desc: "An effective pore purifying facial which deep cleanse the skin combining professional Strenght lactic acid and botanical extratcs. This treatment refines skin clarity and reduces Acne blemishes while soothing redness and inframation A simple and Effective treatment with high-performance ingreadients provides clear and visible",
         img: deep,
-        price1: "Rs 2800 -60Mins",
+        price1: "2800",
       },
     ];
     return (
@@ -47,15 +47,14 @@ const Facials = () => {
                   <div className="flex justify-around gap-8  items-center">
                     <div>
                       <p className="text-xl font-semibold">Minutes</p>
-                      <p>30 Mins</p>
                       
                       <p>60 Mins</p>
                     </div>
                     <div>
                       <p className="text-xl font-semibold">Price</p>
-                      <p>Rs. 1500 /- </p>
-                      <p>Rs. 2200 /- </p>
-                    
+                      <p>
+                        Rs. {service?.price1} /-{" "}
+                      </p>
                     </div>
                   </div>
                 </div>

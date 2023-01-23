@@ -35,10 +35,12 @@ const service1Data = [
 ];
 const Services = () => {
     return (
-      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-        <h2 className="text-center text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none my-10">
-          Our  <span className="golden-color">Services</span>
-        </h2>
+      <div>
+        <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+          <h2 className="text-center text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none my-10">
+            Our <span className="golden-color">Services</span>
+          </h2>
+        </div>
         <div>
           {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {service1Data.map((service) => (
@@ -68,7 +70,7 @@ const Services = () => {
               </div>
             ))}
           </div> */}
-          <ServiceItem/>
+          <ServiceItem />
           <div className="my-10">
             <SpaTreatment />
           </div>

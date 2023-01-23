@@ -7,7 +7,7 @@ const Navbar = () => {
         <li>
           <a
             href="#home"
-            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-yellow-400"
           >
             Home
           </a>
@@ -15,7 +15,7 @@ const Navbar = () => {
         <li>
           <a
             href="#about"
-            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-yellow-400"
           >
             About Us
           </a>
@@ -23,31 +23,31 @@ const Navbar = () => {
         <li>
           <a
             href="#services"
-            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-yellow-400"
           >
             Services
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="#offer"
-            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-yellow-400"
           >
             Offers
           </a>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <a
             href="#reviews"
-            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-yellow-400"
           >
             Reviews
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             href="#form"
-            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+            class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-yellow-400"
           >
             contact us
           </a>
@@ -56,7 +56,7 @@ const Navbar = () => {
     );
     return (
       <div className="relative">
-        <div class="bg-black fixed top-0 w-full z-10">
+        <div class="bg-white fixed top-0 w-full z-10">
           <div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div class="relative flex items-center justify-between">
               <a
@@ -65,7 +65,7 @@ const Navbar = () => {
                 title="Company"
                 class="inline-flex items-center"
               >
-                <span class="ml-2 text-xl font-bold tracking-wide hover:hover:text-yellow-400 text-gray-100 uppercase">
+                <span class="ml-2 text-xl font-bold tracking-wide hover:hover:text-yellow-400 text-gray-900 uppercase">
                   Yantra Spa
                 </span>
               </a>

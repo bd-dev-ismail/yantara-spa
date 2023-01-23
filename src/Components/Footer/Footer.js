@@ -32,7 +32,7 @@ const Footer = () => {
 
             <div className="space-y-2 text-sm">
               <p className="text-base font-bold tracking-wide hover:text-yellow-400 text-gray-100">
-                Open In
+                Hours Open
               </p>
               <div className="flex">
                 <p className="mr-1 text-white hover:text-yellow-400">Day:</p>
@@ -85,9 +85,9 @@ const Footer = () => {
             </div>
             <div>
               <span className="text-base  font-bold tracking-wide text-white hover:text-yellow-400">
-                Social
+                Links
               </span>
-              <div className="flex items-center mt-1 space-x-3">
+              {/* <div className="flex items-center mt-1 space-x-3">
                 <a
                   href="/"
                   className="text-white hover:text-yellow-400 transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -117,7 +117,21 @@ const Footer = () => {
               <p className="mt-4 text-sm text-white hover:text-yellow-400">
                 Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
                 spare ribs salami.
-              </p>
+              </p> */}
+              <div>
+                <div className="my-2">
+                  <a href="#home">Home</a>
+                </div>
+                <div className="mb-2">
+                  <a href="#about">About Us</a>
+                </div>
+                <div className="mb-2">
+                  <a href="#services">Services</a>
+                </div>
+                <div>
+                  <a href="#form">Contact Us</a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex flex-col-reverse justify-center pt-5 pb-10 border-t lg:flex-row">
